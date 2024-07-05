@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+{{range .}}
+    <h1>Acc. Year: {{.AcaYear}}  </h1>
+    <h2>Semester name: {{.Fall.Term}}</h2>
+    {{range .Fall.Courses}}
+        <h3> Couse Number : {{.Number}}<h3>
+        <h3> Couse Name : {{.Name}}<h3>
+        <h3> Couse Units: {{.Units}}</h3>
+    {{end}}
+    {{range .Spring.Courses}}
+        <h3> Couse Number : {{.Number}}<h3>
+        <h3> Couse Name : {{.Name}}<h3>
+        <h3> Couse Units: {{.Units}}</h3>
+    {{end}}
+    {{range .Summer.Courses}}
+        <h3> Couse Number : {{.Number}}<h3>
+        <h3> Couse Name : {{.Name}}<h3>
+        <h3> Couse Units: {{.Units}}</h3>
+    {{end}}
+{{end}}
+</body>
+</html>
