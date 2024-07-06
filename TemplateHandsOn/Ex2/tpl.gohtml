@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>California Hotel List</title>
+</head>
+<body>
+{{range .Region}}
+<h1>{{.Region}} Hotel List</h1>
+<h1>Zip Code for Region : {{.Zip}}</h1>
+{{range .Hotels}}
+    <li>Hotel name: {{.Name}}</li>
+    <li>Hotel Address : {{.Address}}</li>
+    <li>City : {{.City}}</li>
+{{end}}
+
+{{end}}
+</body>
+</html>
