@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>California Hotel List</title>
+</head>
+<body>
+{{range .Breakfast}}
+<h1>List of Breakfast</h1>
+<li>Item Name : {{.Name}}</li>
+<li>Item Type : {{.ItemType}}</li>
+{{end}}
+{{range .Lunch}}
+<h1>List of Lunch</h1>
+<li>Item Name : {{.Name}}</li>
+<li>Item Type : {{.ItemType}}</li>
+{{end}}
+{{range .Dinner}}
+<h1>List of Dinner</h1>
+<li>Item Name : {{.Name}}</li>
+<li>Item Type : {{.ItemType}}</li>
+{{end}}
+
+</body>
+</html>
